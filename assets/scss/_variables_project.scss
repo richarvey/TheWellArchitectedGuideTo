@@ -4,3 +4,26 @@ Add styles or override variables from the theme here.
 
 */
 
+$primary: #232F3E;
+$secondary: #FF9900;
+
+$google_font_name: "Roboto";
+$google_font_family: "Roboto:300,300i,400,400i,700,700i";
+
+.opex-off, .sec-off, .rel-off, .perf-off, .cost-off, .sus-off {
+	font-weight: bolder;
+	text-decoration: none;
+        border-bottom: 8px solid #232F3E;  
+}
+
+.opex-on, .sec-on, .rel-on, .perf-on, .cost-on, .sus-on {
+	font-weight: bolder;
+	text-decoration: none;
+        border-bottom: 8px solid #FF9900;  
+}
+
+.opex-sec, .sec-sec, .rel-sec, .perf-sec, .cost-sec, .sus-sec {
+	fsect-weight: bolder;
+	text-decoration: none;
+        border-bottom: 8px solid #F9CB9C;  
+}

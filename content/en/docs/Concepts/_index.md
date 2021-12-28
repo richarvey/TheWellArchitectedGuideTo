@@ -5,13 +5,38 @@ weight: 4
 description: >
   What does your user need to understand about your project in order to use it - or potentially contribute to it? 
 ---
+Whilst reading the sections you'll be presented with the Well Architected Bar, this is to tell you which parts of the Well-Architected Framework is applicaple to the content you are about to read. The example below indicates that __Security__ is the main focus of the content but the content is also applicable to __Operational Excellence__ as a secondary catergory.
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+<span class=opex-sec>OpEx</span>
+<span class=sec-on>Sec</span>
+<span class=rel-off>Rel</span>
+<span class=perf-off>Perf</span>
+<span class=cost-off>Cost</span>
+<span class=sus-off>Sus</span>
+<br/>
 
-For many projects, users may not need much information beyond the information in the [Overview](/docs/overview/), so this section is **optional**. However if there are areas where your users will need a more detailed understanding of a given term or feature in order to do anything useful with your project (or to not make mistakes when using it) put that information in this section. For example, you may want to add some conceptual pages if you have a large project with many components and a complex architecture.
+This book includes code samples and command line (CLI) instructions to run as you go through it. The code blocks will be Terraform or Python code, the code blocks will always be tagged with the correct language like so:
 
-Remember to focus on what the user needs to know, not just what you think is interesting about your project! If they don’t need to understand your original design decisions to use or contribute to the project, don’t put them in, or include your design docs in your repo and link to them. Similarly, most users will probably need to know more about how features work when in use rather than how they are implemented. Consider a separate architecture page for more detailed implementation and system design information that potential project contributors can consult.
+```python
+import boto3, botocore
+import base64, os, json, requests
+from aws_lambda_powertools import Tracer
+from aws_lambda_powertools.logging.logger import set_package_logger
 
+set_package_logger()
+
+# POWERTOOLS_SERVICE_NAME defined
+tracer = Tracer(service="s3r")
+
+def check_safeurl(url):
+    ''' check url to make sure its not on a blocked list'''
+    if os.environ['SafeBrowsing'] == 'true':
+……
+``` 
+
+Command Line instructions will be indented on their own line, for example
+
+  ```aws s3 ls```
+
+Should you need to change a variable in the code or CLI instruction it will be highlighted in __bold__ and <> for example __<AWS_REGION>__
 
