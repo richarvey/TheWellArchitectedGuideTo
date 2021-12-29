@@ -66,6 +66,7 @@ module "s3_bucket" {
     
     versioning = {
       enabled = "${var.versioning}"
+      mfa_delete = true
     }
 
     # S3 bucket-level Public Access Block configuration

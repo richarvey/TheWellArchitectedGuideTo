@@ -27,3 +27,4 @@ Performance Efficiency | Best performance with small files | Great for large fil
 Cost Optimization      | SAN solutions can be expensive    | Cheaper and cloud providers only charge for what you use |
 
 
+Object storage is very cost-efficient for many use cases. It also has several tiers of storage available to the end-user. These tiers have pros and cons and you can find out more in chapter 5.
