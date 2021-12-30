@@ -1,7 +1,7 @@
 
 ---
-title: "Enabling Encyption"
-linkTitle: "Enabling Encyption"
+title: "Enabling Encryption"
+linkTitle: "Enabling Encryption"
 weight: 3 
 date: 2021-12-27
 description: >
