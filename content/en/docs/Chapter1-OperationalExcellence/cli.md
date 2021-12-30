@@ -1,0 +1,74 @@
+
+---
+title: "The AWS Command Line"
+linkTitle: "The AWS Command Line"
+weight: 1
+date: 2021-12-30
+description: >
+  Useful AWS CLI commands
+---
+<span class=opex-on>OpEx</span>
+<span class=sec-off>Sec</span>
+<span class=rel-off>Rel</span>
+<span class=perf-off>Perf</span>
+<span class=cost-off>Cost</span>
+<span class=sus-off>Sus</span>
+
+Lets start off by getting familiar with the AWS CLI. If you are using the AWS console as suggested in getting started this iwll be super simple. Below are a few commands that are super useful and a great reference for you hopefully.
+
+#### s3 make bucket (create bucket)
+```bash
+aws s3 mb s3://sqcows-bucket --region eu-west-1
+```
+
+#### s3 remove bucket
+```bash
+aws s3 rb s3://sqcows-bucket
+aws s3 rb s3://sqcows-bucket --force # Delete a none empty bucket
+```
+
+#### s3 ls commands
+```bash
+aws s3 ls
+aws s3 ls s3://sqcows-bucket
+aws s3 ls s3://sqcows-bucket --recursive
+aws s3 ls s3://sqcows-bucket --recursive  --human-readable --summarize
+```
+
+#### s3 cp commands
+```bash
+aws s3 cp getdata.php s3://sqcows-bucket
+aws s3 cp /local/dir/data s3://sqcows-bucket --recursive
+aws s3 cp s3://sqcows-bucket/getdata.php /local/dir/data
+aws s3 cp s3://sqcows-bucket/ /local/dir/data --recursive
+aws s3 cp s3://sqcows-bucket/init.xml s3://backup-bucket
+aws s3 cp s3://sqcows-bucket s3://backup-bucket --recursive
+```
+
+#### s3 mv commands
+```bash
+aws s3 mv source.json s3://sqcows-bucket
+aws s3 mv s3://sqcows-bucket/getdata.php /home/project
+aws s3 mv s3://sqcows-bucket/source.json s3://backup-bucket
+aws s3 mv /local/dir/data s3://sqcows-bucket/data --recursive
+aws s3 mv s3://sqcows-bucket s3://backup-bucket --recursive
+```
+
+#### s3 rm commands
+```bash
+aws s3 rm s3://sqcows-bucket/<file_to_delete>
+aws s3 rm s3://sqcows-bucket --recursive #delete all the files int he bucket!!!!
+```
+
+#### s3 sync commands
+```bash
+aws s3 sync backup s3://sqcows-bucket
+aws s3 sync s3://sqcows-bucket/backup /tmp/backup
+aws s3 sync s3://sqcows-bucket s3://backup-bucket
+```
+
+#### s3 presign url (default 3600 seconds)
+```bash
+aws s3 presign s3://sqcows-bucket/<file_to_share>
+aws s3 presign s3://sqcows-bucket/<file_to_share> --expires-in 300 #5mins
+```

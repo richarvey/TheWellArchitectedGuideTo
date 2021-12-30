@@ -58,6 +58,13 @@ which would return you an answe like below:
 https://s3redirect.s3.amazonaws.com/index.html?AWSAccessKeyId=AKIAVFTCNZXUBOD4ZTX6&Signature=gptFG4W2hCoRCWmd%2FloDtvqUonc%3D&Expires=1640724520
 ```
 
+You can of course can do this by using the CLI directly with the following commands:
+
+```bash
+aws s3 presign s3://sqcows-bucket/<file_to_share>
+aws s3 presign s3://sqcows-bucket/<file_to_share> --expires-in 300 #5mins
+```
+
 ### Technical considerations
 Whilst it is an easy way to share files to people who normally have ano access this could become a cumbersome process. It would make more sense to review the users access rights and grant them proper access to the files they need. This would also prevent the signed URL being used by others.
 

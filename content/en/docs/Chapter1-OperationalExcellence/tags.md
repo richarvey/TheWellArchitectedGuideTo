@@ -2,7 +2,7 @@
 ---
 title: "Tags"
 linkTitle: "Tags"
-weight: 1
+weight: 2 
 date: 2021-12-27
 description: >
   Tagging everything!

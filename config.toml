@@ -203,9 +203,9 @@ enable = false
 	icon = "fab fa-twitter"
         desc = "Follow me on Twitter to get the latest news!"
 [[params.links.developer]]
-	name = "GitHub"
+	name = "Git"
 	url = "https://github.com/richarvey"
-	icon = "fab fa-github"
+	icon = "fab fa-git-alt"
         desc = "Find my other projects here"
 [[params.links.developer]]
 	name = "YouTube"
