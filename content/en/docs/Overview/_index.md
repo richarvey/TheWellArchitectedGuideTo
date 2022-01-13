@@ -8,7 +8,7 @@ description: >
 
 ### Who is this book for?
 
-This book is for people who know the basics of AWS and Amazon S3 but want to make sure they are using it in the best possible way, a way that adheres to the six pillars of the well-architected framework of best practices. There are a few tips and tricks in here even for the more experienced practitioners.
+This book is for people who know the basics of AWS and Amazon S3 but want to make sure they are using it in the best possible way, a way that adheres to the six pillars of the well-architected framework of best practices. The book is split into the pillars of the well architected framework so you can jump to Security if you want to check out those reciepes. There are a few tips and tricks in here even for the more experienced practitioners.
 I’ll guide you through the best practices for security and show you how to save money on common tasks. We’ll look at static web hosting, offloading static assets from your CMS and much much more as we go. One of my favourite integrations with S3 is the ability to automate actions after a file has been uploaded with Lambda.
 
 ### What can you get from this book?
@@ -28,4 +28,4 @@ It’s a set of design principles that can be broadly applied to most clouds and
 - Cost Optimization
 - Sustainability
 
-I've marked each reciepe with a primary pillar (explained in the concepts section. However the pillars often cross over so i've highlighted when doing a certain action may affect another pillar also. Check out the concepts used in the is book to get a better idea of that.
+I've marked each reciepe with a primary pillar (explained in the concepts section). However the pillars often cross over so i've highlighted when doing a certain action may affect another pillar also. Check out the concepts used in the is book to get a better idea of that.

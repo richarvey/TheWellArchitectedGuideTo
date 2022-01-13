@@ -38,5 +38,5 @@ Command Line instructions will be indented on their own line, for example
 
   ```aws s3 ls```
 
-Should you need to change a variable in the code or CLI instruction it will be highlighted in __bold__ and <> for example __<AWS_REGION>__
+Should you need to change a variable in the code or CLI instruction it will be highlighted in __bold__ and __<>__ for example __<AWS_REGION>__
 
