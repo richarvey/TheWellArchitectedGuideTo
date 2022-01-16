@@ -1,7 +1,11 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
+  - name: Install aws cli
+    before: sudo apt update
+    init: echo "Installing AWS cli"
+    command: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && sudo ./aws/install
   - name: Install Hugo dependencies
-    before: brew install hugo awscli
+    before: brew install hugo
     init: echo "Your version of Hugo is `hugo version`"
     command: hugo server -D -F --baseUrl $(gp url 1313) --liveReloadPort=443 --appendPort=false --bind=0.0.0.0
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
