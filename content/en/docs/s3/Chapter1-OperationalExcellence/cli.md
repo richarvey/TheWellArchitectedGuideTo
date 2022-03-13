@@ -14,7 +14,11 @@ description: >
 <span class=cost-off>Cost</span>
 <span class=sus-off>Sus</span>
 
-Let's start off by getting familiar with the AWS CLI. If you are using the AWS console as suggested in getting started this will be super simple. Below are a few commands that are super useful:
+Let's start off by getting familiar with the AWS CLI. If you are using the AWS Web Terminal as suggested in getting started this will be super simple. 
+Manipulating large numbers of files is much simpler via the CLI compared to using the console interface, the '''sync''' command is one example of this allowing you to easily copy a large
+number of files to or from an S3 bucket.
+
+Below are a few commands that are super useful:
 
 #### s3 make bucket
 Quickly create a bucket from the command line. If you don't specify --region the CLI will default to your default.

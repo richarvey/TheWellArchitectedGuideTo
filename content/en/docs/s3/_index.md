@@ -1,7 +1,7 @@
 
 ---
-title: "WA Guide to S3"
-linkTitle: "WA Guide to S3"
+title: "S3"
+linkTitle: "S3"
 weight: 20
 menu:
   main:

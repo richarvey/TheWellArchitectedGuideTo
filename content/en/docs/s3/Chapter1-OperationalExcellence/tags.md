@@ -14,7 +14,12 @@ description: >
 <span class=cost-sec>Cost</span>
 <span class=sus-off>Sus</span>
 
-Why are tags important you may ask? Well, tags can help in a few ways such as cost allocation, defining the sensitivity of the data, what environment the data is for, and even access control. Each resource (a bucket in our case) can have up to 10 user-defined tags and these are broadly split into these areas, Technical, Automation, Business, and Security. Here are the strictions you should consider when making tags:
+Why are tags important you may ask? Well, tags can help in a few ways such as cost allocation, defining the sensitivity of the data, what environment the data is for, and even access control. 
+They can even be used to show the owner of certain files or workloads helping you quickly contact users, other companies use to tags to clasify the sensitivity of the data in terms of Personal Identifiable Information (PII). Those PII tags then can be used to include/exclude access from IAM users.
+
+## Resource contraints
+
+Each resource (a bucket in our case) can have up to 10 user-defined tags and these are broadly split into these areas, Technical, Automation, Business, and Security. Here are the strictions you should consider when making tags:
 
 |Restriction | Description |
 |------------|-------------|
@@ -23,6 +28,8 @@ Why are tags important you may ask? Well, tags can help in a few ways such as co
 |Maximum value length | 256 Unicode characters in UTF-8 |
 |Prefix restriction | Do not use the aws: prefix in your tag names or values because it is reserved for AWS use. You can't edit or delete tag names or values with this prefix. Tags with this prefix do not count against your tags per resource limit. |
 |Character restrictions | Tags may only contain Unicode letters, digits, whitespace, or these symbols: _ . : / = + - @ |
+
+## Recommended Tags
 
 The table below shows the tags I recommend to customers, but of course, you can add more or leave some out.
 
@@ -34,7 +41,9 @@ The table below shows the tags I recommend to customers, but of course, you can 
 |Cluster: if the resource is used in a particular cluster tag it| | Customer: Add this if you charge your customer for usage| |
 |Version: stick to semver or git release if possible| | | |
 
-Lets take a look at how this would look in terraform, the code can be found in the folder 4.0/001. It consists of five files:
+## Using Terraform
+Lets take a look at how this would look in terraform, the code can be found in the folder chapter1/001. It consists of five files:
+
 #### main.tf
 As the tiles suggest this is where we define the main stuff, as in what want to do. In this example, its create an S3 bucket and set versioning and tags on that bucket.
 #### providers.tf

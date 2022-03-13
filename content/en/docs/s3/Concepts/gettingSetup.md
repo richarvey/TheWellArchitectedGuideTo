@@ -22,6 +22,8 @@ I now recommend you run some updates to get us all on the same track:
   yum upgrade
   ```
 
+## Installing Terraform
+
 Finally in the setup section lets install terraform. Terraform is a Infrastructure as code tool produced by hashicorp and is an alternative to Amazon's own CloudFormation. I’m including both in this book as which one you prefer is down to your preference.
 
 Let us install unzip first so you can extract the terraform file:

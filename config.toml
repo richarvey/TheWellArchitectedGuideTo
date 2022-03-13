@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "The Well-Architected Guide to S3"
+title = "The Well-Architected Guide to..."
 
 enableRobotsTXT = true
 
@@ -70,7 +70,7 @@ anchor = "smart"
 
 [languages]
 [languages.en]
-title = "The Well-Architected Guide to S3"
+title = "The Well-Architected Guide to..."
 description = "Best Practices for using Amazon S3"
 languageName ="English"
 # Weight used for sorting.
@@ -88,7 +88,7 @@ weight = 1
 
 # Everything below this are Site Params
 
-# Comment out if you don't want the "print entire section" link enabled.
+# Comment out if you don't want the print entire section link enabled.
 [outputs]
 section = ["HTML", "print", "RSS"]
 
