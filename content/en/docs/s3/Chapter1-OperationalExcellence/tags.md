@@ -15,11 +15,11 @@ description: >
 <span class=sus-off>Sus</span>
 
 Why are tags important you may ask? Well, tags can help in a few ways such as cost allocation, defining the sensitivity of the data, what environment the data is for, and even access control. 
-They can even be used to show the owner of certain files or workloads helping you quickly contact users, other companies use to tags to clasify the sensitivity of the data in terms of Personal Identifiable Information (PII). Those PII tags then can be used to include/exclude access from IAM users.
+They can even be used to show the owner of certain files or workloads helping you quickly contact users, other companies use to tags to classify the sensitivity of the data in terms of Personal Identifiable Information (PII). Those PII tags then can be used to include/exclude access from IAM users.
 
-## Resource contraints
+## Resource constraints
 
-Each resource (a bucket in our case) can have up to 10 user-defined tags and these are broadly split into these areas, Technical, Automation, Business, and Security. Here are the strictions you should consider when making tags:
+Each resource (a bucket in our case) can have up to 10 user-defined tags and these are broadly split into these areas, Technical, Automation, Business, and Security. Here are the restrictions you should consider when making tags:
 
 |Restriction | Description |
 |------------|-------------|
@@ -73,10 +73,10 @@ To clean up after this example just run the following command:
 Also type yes when prompted and it will clean up the deployment for you.
 
 ### Technical considerations: 
-Which tags are useful tou your teams, having a owner and sensitivity level on data can help you prioritise work quickly in a crisis. You may also consider versioning is not required becuase you choose to repliate data to another region.
+Which tags are useful tou your teams, having a owner and sensitivity level on data can help you prioritise work quickly in a crisis. You may also consider versioning is not required because you choose to replicate data to another region.
 
 ### Business considerations: 
-What tags are important to the business, will they help you pin downthe costs per clickof operations for example? You should also be involved in setting the number of versions to keep. This could change from project to project but allows your business to know the risk and impact
+What tags are important to the business, will they help you pin down the costs per click of operations for example? You should also be involved in setting the number of versions to keep. This could change from project to project but allows your business to know the risk and impact
 
 
 

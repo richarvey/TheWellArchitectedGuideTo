@@ -14,17 +14,17 @@ description: >
 <span class=cost-off>Cost</span>
 <span class=sus-off>Sus</span>
 
-Bucket Policies are applied by the account owner to the bucket. Only the account owner can do this. It uses the JSON format and has a limitof 20k in size. This policy is then used to grant access to your resources. Lets have a chat about some of the termonioligy used for Buckey Policies first by having a look at the following elements and what they mean and reffer too:
+Bucket Policies are applied by the account owner to the bucket. Only the account owner can do this. It uses the JSON format and has a limit of 20k in size. This policy is then used to grant access to your resources. Lets have a chat about some of the terminology used for Bucket Policies first by having a look at the following elements and what they mean and refer too:
 
-Resources: These can be buckets, objects, access points, and jobs for which you can allow or deny permissions. You reffer to them by Amazon Resource Name (ARN).
+Resources: These can be buckets, objects, access points, and jobs for which you can allow or deny permissions. You refer to them by Amazon Resource Name (ARN).
 
-Actions: Each resource type supports fined grained control actions so you can give a user the least priviliage they need. In the case of S3 it could like the following example:
+Actions: Each resource type supports fined grained control actions so you can give a user the least privilege they need. In the case of S3 it could like the following example:
   ```json
   "s3:CreateBucket", 
   "s3:ListAllMyBuckets", 
   "s3:GetBucketLocation" 
   ```
-Effect: An effect is applied to the user requestion an action and are in the form of Allow and Deny. If you don’r explicitly grant an Allow the default action is deny.
+Effect: An effect is applied to the user request as an action and are in the form of Allow and Deny. If you don’r explicitly grant an Allow the default action is deny.
 
 Principal: The account or user who is allowed access to the actions and resources in the statement. In a bucket policy its the root user of the account.
 

@@ -15,7 +15,7 @@ description: >
 <span class=sus-off>Sus</span>
 
 
-You can also set bucket-level permissions in S3, which can override object-level permissions that someone tries to set. This is a super quick thing to enable in terraform and if you create a bucket in the AWS console it’ll actually ve defaulted to these values. Once again these things will project you from accidentally exposing data. All these tags below are pretty self-explanatory and included in the example.
+You can also set bucket-level permissions in S3, which can override object-level permissions that someone tries to set. This is a super quick thing to enable in terraform and if you create a bucket in the AWS console it’ll actually be defaulted to these values. Once again these things will project you from accidentally exposing data. All these tags below are pretty self-explanatory and included in the example.
   ```json
   # S3 bucket-level Public Access Block configuration
   block_public_acls       = true

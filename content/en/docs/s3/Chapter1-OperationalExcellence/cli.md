@@ -34,7 +34,7 @@ aws s3 rb s3://sqcows-bucket --force # Delete a none empty bucket
 ```
 
 #### s3 ls commands
-Just like the *nix equivalant there is a recursive option which is useful when you start racking up lots of objects and prefixes.
+Just like the *nix equivalent there is a recursive option which is useful when you start racking up lots of objects and prefixes.
 ```bash
 aws s3 ls
 aws s3 ls s3://sqcows-bucket
