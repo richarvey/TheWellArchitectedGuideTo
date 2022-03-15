@@ -65,7 +65,7 @@ There’s a great example for this in the form of you may wish to enable MultiFa
   }
   ```
 
-Let’s take this example (chapter3/002) forward, by showing you how to add a policy. In this case, we are going to create an IAM role and then allow anyone with that role attached or anyone who can assume that role to List the S3 bucket contents. The code below enables this:
+Let’s take this example (chapter2/001) forward, by showing you how to add a policy. In this case, we are going to create an IAM role and then allow anyone with that role attached or anyone who can assume that role to List the S3 bucket contents. The code below enables this:
 
 ```json
 resource "aws_iam_role" "this" {

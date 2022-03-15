@@ -20,7 +20,7 @@ Just as Werner Vogals (CRO of AWS) said, dance like no one is watching, encrypt 
   ```
 This is the part that tells AWS to use default encryption. It’s the cheapest and easiest way to encrypt at rest. You’ll also see the code at the bottom that uploads our file. Note theres nothing special on that file to say “hey lets encrypt”, it’s automatically applied at the bucket level.
 
-To run this example (chapter3/004) make sure you are in the correct folder and run:
+To run this example (chapter2/003) make sure you are in the correct folder and run:
   ```bash
   terraform init
   terraform plan

@@ -36,7 +36,7 @@ Even if you enable all available ACL options in the Amazon S3 console, the ACL a
 
 To prevent any accidental change to public access on a bucket's ACL, you can configure public access settings for the bucket. If you select Block new public ACLs and uploading public objects, then users can't add new public ACLs or upload public objects to the bucket. If you select Remove public access granted through public ACLs, then all existing or new public access granted by ACLs is respectively overridden or denied. The changes in our terraform set these permissions.
 
-To run this example (chapter3/003) make sure you are in the correct folder and run:
+To run this example (chapter2/002) make sure you are in the correct folder and run:
   ```bash
   terraform init
   terraform plan

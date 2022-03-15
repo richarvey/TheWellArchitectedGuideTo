@@ -1,35 +1,73 @@
-variable "bucket_name" {
-    default = "sqcows-demo-bucket"
-}
-
-variable "acl_value" {
-    default = "private"
-}
-
 variable "region" {
-    default = "eu-west-1"
+    default = "us-west-2"
+    description = "AWS Region"
 }
 
-variable "versioning" {
-    default = "true"
+variable "source_bucket_name" {
+  type        = string
+  description = "Source Bucket Name"
+}
+
+variable "stage" {
+  type        = string
+  description = "Deployment stage/environment name"
 }
 
 variable "project" {
-    default = "thewellarchguide"
+  type        = string
+  description = "Project Name"
+  default     = "Bucket Replication Project"
 }
 
-variable "env" {
-    default = "demo"
+variable "product" {
+  type        = string
+  description = "Product Domain"
+  default     = "DEMO"
 }
 
-variable "owner" {
-    default = "Ric Harvey"
+variable "description" {
+  type        = string
+  description = "The description of this S3 bucket"
+  default     = "S3 Bucket to hold your Data"
 }
 
-variable "cost" {
-    default = "The Book Team"
+variable "managedBy" {
+  description = "Managed By automation tool name"
+  default     = "Terraform"
 }
 
-variable "conf" {
-    default = "creative commons"
+variable "tags" {
+  description = "A map of tags to add to all resources"
+  default     = {}
+}
+
+variable "public" {
+
+  description = "Allow public read access to bucket"
+  default     = "private"
+}
+
+variable "force_destroy" {
+  description = "Delete all objects in bucket on destroy"
+  default     = false
+}
+
+variable "versioned" {
+  description = "Version the bucket"
+  default     = true
+}
+
+variable "lifecycle_enabled" {
+  description = "Is Lifecycle enabled?"
+  default     = false
+}
+
+variable "iam_role_name" {
+  type        = string
+  description = "IAM Role name for replication"
+}
+
+variable "destination_bucket_name" {
+  type        = string
+  description = "Destination bucket name"
 }
