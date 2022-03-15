@@ -3,7 +3,7 @@ title: "Concepts"
 linkTitle: "Concepts"
 weight: 4
 description: >
-  What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+  What you need to know! 
 ---
 Whilst reading the sections you'll be presented with the Well Architected Bar, this is to tell you which parts of the Well-Architected Framework is applicaple to the content you are about to read. The example below indicates that __Security__ is the main focus of the content but the content is also applicable to __Operational Excellence__ as a secondary catergory.
 

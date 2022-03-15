@@ -199,22 +199,17 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "Twitter"
-	url = "https://example.org/ric__harvey"
+	url = "https://twitter.com/ric__harvey"
 	icon = "fab fa-twitter"
         desc = "Follow me on Twitter to get the latest news!"
 [[params.links.developer]]
 	name = "Git"
 	url = "https://github.com/richarvey"
-	icon = "fab fa-git-alt"
+	icon = "fab fa-github"
         desc = "Find my other projects here"
 [[params.links.developer]]
 	name = "YouTube"
-	url = "https://www.youtube.com/c/RichardHarveyUK"
+	url = "https://s3r.io/acr"
 	icon = "fab fa-youtube"
         desc = "Come watch some cloud fun on YouTube"
-[[params.links.developer]]
-	name = "Community"
-	url = "https://www.meetup.com/members/77365432/"
-	icon = "fab fa-meetup"
-        desc = "Discuss development issues and join the community"
 
