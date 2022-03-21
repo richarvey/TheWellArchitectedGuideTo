@@ -1,9 +1,9 @@
 ---
-title: "Enabling Event Bridge"
+title: "Enabling EventBridge"
 date: 2022-01-01
 weight: 1 
 description: >
-  SNS, SQS and EventBridge Triggers.
+  EventBridge Triggers.
 ---
 <span class=opex-off>OpEx</span>
 <span class=sec-off>Sec</span>
@@ -21,28 +21,19 @@ To enable EventBridge event delivery in the S3 console.
 - In the Buckets list, choose the name of the bucket that you want to enable events for.
 - Choose Properties.
 - Navigate to the Event Notifications section and find the Amazon EventBridge subsection. Choose Edit.
+
+![Enabling EventBridge](../eventbridge-s3-1.png)
+
 - Under Send notifications to Amazon EventBridge for all events in this bucket choose On.
 
 __Note__
 After you enable EventBridge, it takes around five minutes for the changes to take effect.
 
 ## Using the AWS CLI
-The following example creates a bucket notification configuration for bucket DOC-EXAMPLE-BUCKET1 with Amazon EventBridge enabled.
+The following example creates a bucket notification configuration for bucket <BUCKET-NAME> with Amazon EventBridge enabled.
 
 ```
-aws s3api put-bucket-notification-configuration --bucket DOC-EXAMPLE-BUCKET1 --notification-configuration '{ "EventBridgeConfiguration": {} }'
-```
-
-## Using the REST API
-You can programmatically enable Amazon EventBridge on a bucket by calling the Amazon S3 REST API. For more information see, see PutBucketNotificationConfiguration in the Amazon Simple Storage Service API Reference.
-
-The following example shows the XML used to create a bucket notification configuration with Amazon EventBridge enabled.
-
-```
-<NotificationConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-  <EventBridgeConfiguration>
-  </EventBridgeConfiguration>
-</NotificationConfiguration>
+aws s3api put-bucket-notification-configuration --bucket <BUCKET-NAME> --notification-configuration '{ "EventBridgeConfiguration": {} }'
 ```
 
 ## Creating EventBridge rules
